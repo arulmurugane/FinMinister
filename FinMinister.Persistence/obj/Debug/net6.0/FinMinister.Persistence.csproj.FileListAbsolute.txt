@@ -1,0 +1,17 @@
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Persistence.deps.json
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Persistence.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\ref\FinMinister.Persistence.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Persistence.pdb
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Application.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Domain.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Application.pdb
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\bin\Debug\net6.0\FinMinister.Domain.pdb
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.csproj.AssemblyReference.cache
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.AssemblyInfoInputs.cache
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.AssemblyInfo.cs
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.csproj.CoreCompileInputs.cache
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.csproj.CopyComplete
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\ref\FinMinister.Persistence.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Persistence\obj\Debug\net6.0\FinMinister.Persistence.pdb

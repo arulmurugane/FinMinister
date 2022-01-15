@@ -1,0 +1,11 @@
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\bin\Debug\net6.0\FinMinister.Domain.deps.json
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\bin\Debug\net6.0\FinMinister.Domain.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\bin\Debug\net6.0\ref\FinMinister.Domain.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\bin\Debug\net6.0\FinMinister.Domain.pdb
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\FinMinister.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\FinMinister.Domain.AssemblyInfoInputs.cache
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\FinMinister.Domain.AssemblyInfo.cs
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\FinMinister.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\FinMinister.Domain.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\ref\FinMinister.Domain.dll
+D:\Projects\FinMinister\FInMinister\FinMinister.Domain\obj\Debug\net6.0\FinMinister.Domain.pdb

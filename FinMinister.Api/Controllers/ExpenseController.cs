@@ -24,5 +24,12 @@ namespace FinMinister.Api.Controllers
             var dtos = await _mediator.Send(new GetExpenseListQuery() { UserId = userId });
             return Ok(dtos);
         }
+
+        [HttpPost(Name = "AddExpense")]
+        public async Task<ActionResult<Guid>> AddExpense([FromBody]CreateExpenseCommand createExpenseCommand)
+        {
+            var id = await _mediator.Send(createExpenseCommand);
+            return Ok(id);
+        }
     }
 }

@@ -1,6 +1,7 @@
-﻿namespace FinMinister.Domain.Entities
+﻿using FinMinister.Domain.Common;
+namespace FinMinister.Domain.Entities
 {
-    public class User
+    public class User : AuditableEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

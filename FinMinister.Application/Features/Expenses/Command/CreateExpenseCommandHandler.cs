@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FinMinister.Application.Features.Expenses.Command
 {
-    internal class CreateExpenseCommandHandler:IRequestHandler<CreateExpenseCommand, int>
+    internal class CreateExpenseCommandHandler:IRequestHandler<CreateExpenseCommand, Guid>
     {
         private readonly IExpenseRepository _expenseRepository;
         private readonly IMapper _mapper;
@@ -21,7 +21,7 @@ namespace FinMinister.Application.Features.Expenses.Command
             _expenseRepository = expenseRepository;
         }
 
-        public async Task<int> Handle(CreateExpenseCommand request, CancellationToken cancellation)
+        public async Task<Guid> Handle(CreateExpenseCommand request, CancellationToken cancellation)
         {
             var expense = _mapper.Map<Expense>(request);
             expense = await _expenseRepository.AddAsync(expense);

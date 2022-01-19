@@ -25,12 +25,17 @@ namespace FinMinister.Persistence
                 switch (entry.State)
                 {
                     case EntityState.Added:
-                        entry.Entity.CreatedDate = DateTime.Now;
+                        entry.Entity.CreatedDate = entry.Entity.CreatedDate == null?DateTime.UtcNow: entry.Entity.CreatedDate;
                         break;
                     case EntityState.Modified:
-                        entry.Entity.LastModifiedDate = DateTime.Now;
+                        entry.Entity.LastModifiedDate = entry.Entity.LastModifiedDate == null ? DateTime.UtcNow : entry.Entity.LastModifiedDate;
                         break;
                 }
+            }
+
+            foreach (var entry in ChangeTracker.Entries<SyncAndAuditableEntity>())
+            {
+                entry.Entity.SyncDateTime = DateTime.UtcNow;
             }
             return base.SaveChangesAsync(cancellationToken);
         }

@@ -17,6 +17,7 @@ namespace FinMinister.Persistence
         }
 
         public DbSet<Expense> Expense { get; set; }
+        public DbSet<Income> Income { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

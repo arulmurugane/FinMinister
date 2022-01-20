@@ -20,8 +20,7 @@ namespace FinMinister.Persistence
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
             services.AddScoped(typeof(IExpenseRepository), typeof(ExpenseRepository));
-
-            //services.AddScoped<IExpenseRepository, ExpenseRepository>();
+            services.AddScoped(typeof(IIncomeRepository), typeof(IncomeRepository));
 
             return services;
         }

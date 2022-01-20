@@ -1,4 +1,4 @@
-﻿using FinMinister.Application.Features.Expenses;
+﻿using FinMinister.Application.Features.Expenses.Queries;
 using FinMinister.Application.Features.Expenses.Command;
 using MediatR;
 using Microsoft.AspNetCore.Http;

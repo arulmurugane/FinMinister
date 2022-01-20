@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FinMinister.Application.Features.Incomes.Queries;
+using FinMinister.Application.Features.Incomes.Command;
 
 namespace FinMinister.Application.Profiles
 {
@@ -16,8 +17,9 @@ namespace FinMinister.Application.Profiles
         public MappingProfile()
         {
             CreateMap<Expense, ExpenseListVM>();
-            CreateMap<Income, IncomeListVM>();
             CreateMap<Expense, CreateExpenseCommand>().ReverseMap();
+            CreateMap<Income, IncomeListVM>();
+            CreateMap<Income, CreateIncomeCommand>().ReverseMap();
         }
     }
 }

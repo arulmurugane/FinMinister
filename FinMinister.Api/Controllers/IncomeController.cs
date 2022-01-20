@@ -1,4 +1,5 @@
-﻿using FinMinister.Application.Features.Incomes.Queries;
+﻿using FinMinister.Application.Features.Incomes.Command;
+using FinMinister.Application.Features.Incomes.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +22,13 @@ namespace FinMinister.Api.Controllers
         {
             var dtos = await _mediator.Send(new GetIncomeListQuery() { UserId = userId });
             return Ok(dtos);
+        }
+
+        [HttpPost(Name = "AddIncome")]
+        public async Task<ActionResult<Guid>> AddIncome([FromBody] CreateIncomeCommand createIncomeCommand)
+        {
+            var id = await _mediator.Send(createIncomeCommand);
+            return Ok(id);
         }
 
     }

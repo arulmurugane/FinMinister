@@ -12,7 +12,7 @@ using FinMinister.Application.Features.Incomes.Command;
 
 namespace FinMinister.Application.Profiles
 {
-    internal class MappingProfile:Profile
+    public class MappingProfile:Profile
     {
         public MappingProfile()
         {

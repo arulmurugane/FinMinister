@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FinMinister.Application.Features.Expenses.Command
 {
-    internal class CreateExpenseCommandHandler:IRequestHandler<CreateExpenseCommand, Guid>
+    public class CreateExpenseCommandHandler:IRequestHandler<CreateExpenseCommand, Guid>
     {
         private readonly IExpenseRepository _expenseRepository;
         private readonly IMapper _mapper;

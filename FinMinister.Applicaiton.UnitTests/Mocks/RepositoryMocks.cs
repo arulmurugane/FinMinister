@@ -14,7 +14,7 @@ namespace FinMinister.Applicaiton.UnitTests.Mocks
     {
         public static Mock<IExpenseRepository> GetExpenseRepository()
         {
-            var expense = new List<Expense>
+            var expenses = new List<Expense>
             {
                 new Expense{
                     Id = Guid.NewGuid(),
@@ -49,11 +49,17 @@ namespace FinMinister.Applicaiton.UnitTests.Mocks
             };
 
             var mocExpenseRepository = new Mock<IExpenseRepository>();
-            var expenseList = expense;
             mocExpenseRepository.Setup(repo => repo.GetExpenseListByUserIdAsync(It.IsAny<int>())).ReturnsAsync(
                (int userId) =>
                {
-                  return expense.Where<Expense>(e => e.UserId == userId).ToList();
+                  return expenses.Where<Expense>(e => e.UserId == userId).ToList();
+               });
+
+            mocExpenseRepository.Setup(repo => repo.AddAsync(It.IsAny<Expense>())).ReturnsAsync(
+               (Expense expense) =>
+               {
+                   expenses.Add(expense);
+                   return expense;
                });
 
             return mocExpenseRepository;

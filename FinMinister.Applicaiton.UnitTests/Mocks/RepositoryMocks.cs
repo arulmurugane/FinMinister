@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Moq;
 using FinMinister.Application.Contracts.Persistence;
 using FinMinister.Domain.Entities;
+using System.Threading;
 
 namespace FinMinister.Applicaiton.UnitTests.Mocks
 {
@@ -13,7 +14,6 @@ namespace FinMinister.Applicaiton.UnitTests.Mocks
     {
         public static Mock<IExpenseRepository> GetExpenseRepository()
         {
-            var userId = 5;
             var expense = new List<Expense>
             {
                 new Expense{
@@ -41,7 +41,7 @@ namespace FinMinister.Applicaiton.UnitTests.Mocks
                     Category = "Fitness",
                     Description = "Gym",
                     Amount = 5000,
-                    UserId = 5,
+                    UserId = 2,
                     CreatedBy = -1,
                     SyncDateTime = DateTime.Now
 
@@ -49,7 +49,12 @@ namespace FinMinister.Applicaiton.UnitTests.Mocks
             };
 
             var mocExpenseRepository = new Mock<IExpenseRepository>();
-            mocExpenseRepository.Setup(repo => repo.GetExpenseListByUserIdAsync(userId)).ReturnsAsync(expense);
+            var expenseList = expense;
+            mocExpenseRepository.Setup(repo => repo.GetExpenseListByUserIdAsync(It.IsAny<int>())).ReturnsAsync(
+               (int userId) =>
+               {
+                  return expense.Where<Expense>(e => e.UserId == userId).ToList();
+               });
 
             return mocExpenseRepository;
         }

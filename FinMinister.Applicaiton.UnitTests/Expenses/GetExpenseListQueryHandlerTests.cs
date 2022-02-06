@@ -33,13 +33,14 @@ namespace FinMinister.Applicaiton.UnitTests.Expenses
         [Fact]
         public async Task GetExpenseListTest()
         {
+
             var handler = new GetExpenseListQueryHandler(_mapper, _mockExpenseRepository.Object);
 
             var result = await handler.Handle(new GetExpenseListQuery(){ UserId = 5 }, CancellationToken.None);
 
             result.ShouldBeOfType<List<ExpenseListVM>>();
 
-            result.Count.ShouldBe(3);
+            result.Count.ShouldBe(2);
         }
     }
 }
